@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <dimen name="main_signmagrin">40dp</dimen>
+  <dimen name="boattray_labMarginRight">20dp</dimen>
+  <dimen name="boattray_txtviewMargin">5dp</dimen>
+  <dimen name="linearLayout_txtviewDefaultHeight">44dp</dimen>
+</resources>

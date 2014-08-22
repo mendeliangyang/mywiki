@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+        android:id="@+id/linear_ct_ly_parent" android:layout_marginLeft="4dp" android:layout_marginRight="4dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_ct_ly_context"
+        android:background="@color/lineartextview_layoutbackground">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_column="0"
+                style="@style/style_detail_textview_lable"
+                android:id="@+id/linear_ct_tv_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_column="1"
+                android:id="@+id/linear_ct_tv_value"
+                style="@style/style_detail_textview"
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/dashedline"
+            android:id="@+id/linear_ct_ly_view">
+        <!--  style="@style/style_view_cut"
+            <View
+                android:layout_width="fill_parent"
+              	android:layout_height="1dp"
+                android:background="@drawable/dashedline" />-->
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

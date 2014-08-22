@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{57AAA823-6151-4E13-B6B0-084AC252465D}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>shipmonitor</RootNamespace>
+    <AssemblyName>shipmonitor</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>true</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AndroidSupportedAbis>armeabi,armeabi-v7a,x86</AndroidSupportedAbis>
+    <AndroidStoreUncompressedFileExtensions />
+    <MandroidI18n />
+    <JavaMaximumHeapSize />
+    <JavaOptions />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Json" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="allshipinfoActivity.cs" />
+    <Compile Include="baseInfoActivity.cs" />
+    <Compile Include="common.cs" />
+    <Compile Include="custom\allshipadapter.cs" />
+    <Compile Include="custom\customExpanderAdapter.cs" />
+    <Compile Include="custom\dockcustomadapter.cs" />
+    <Compile Include="custom\lineartextview_customcontrl.cs" />
+    <Compile Include="custom\refreshlistview.cs" />
+    <Compile Include="docklistview.cs" />
+    <Compile Include="entity\flightnumberEntity.cs" />
+    <Compile Include="leaveMessageActivity.cs" />
+    <Compile Include="mainActivity.cs" />
+    <Compile Include="owerinfoactivity.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="servingcostactivity.cs" />
+    <Compile Include="shipdetailActivity.cs" />
+    <Compile Include="custom\leaveMessageListviewAdapter.cs" />
+    <Compile Include="WebRequestHelp.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\drawable\AppIcon.png" />
+    <AndroidResource Include="Resources\drawable\AppIcon2.png" />
+    <AndroidResource Include="Resources\drawable\AppIcon7.png" />
+    <AndroidResource Include="Resources\drawable\backBtn.png" />
+    <AndroidResource Include="Resources\drawable\baseInfoBtnDisable.png" />
+    <AndroidResource Include="Resources\drawable\baseInfoBtnNormal.png" />
+    <AndroidResource Include="Resources\drawable\baseInfoBtnPress.png" />
+    <AndroidResource Include="Resources\drawable\cellButtom.png" />
+    <AndroidResource Include="Resources\drawable\cellMiddle.png" />
+    <AndroidResource Include="Resources\drawable\cellTop.png" />
+    <AndroidResource Include="Resources\drawable\costDetailBottom.png" />
+    <AndroidResource Include="Resources\drawable\costDetailMiddle.png" />
+    <AndroidResource Include="Resources\drawable\costDetailTop.png" />
+    <AndroidResource Include="Resources\drawable\currentBtnDisable.png" />
+    <AndroidResource Include="Resources\drawable\currentBtnNormal.png" />
+    <AndroidResource Include="Resources\drawable\currentBtnPress.png" />
+    <AndroidResource Include="Resources\drawable\Default1.png" />
+    <AndroidResource Include="Resources\drawable\Default568h.png" />
+    <AndroidResource Include="Resources\drawable\expenseBtnDisable.png" />
+    <AndroidResource Include="Resources\drawable\expenseBtnNormal.png" />
+    <AndroidResource Include="Resources\drawable\expenseBtnPress.png" />
+    <AndroidResource Include="Resources\drawable\gasBtnDisable.png" />
+    <AndroidResource Include="Resources\drawable\gasBtnNormala2x.png" />
+    <AndroidResource Include="Resources\drawable\gasBtnPressa2x.png" />
+    <AndroidResource Include="Resources\drawable\goodsOwnerBtnDisablea2x.png" />
+    <AndroidResource Include="Resources\drawable\goodsOwnerBtnNormala2x.png" />
+    <AndroidResource Include="Resources\drawable\goodsOwnerBtnPressa2x.png" />
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\drawable\icon_marka2x.png" />
+    <AndroidResource Include="Resources\drawable\LG.png" />
+    <AndroidResource Include="Resources\drawable\LG2.png" />
+    <AndroidResource Include="Resources\drawable\liebiaotouxiang.png" />
+    <AndroidResource Include="Resources\drawable\line1a2x.png" />
+    <AndroidResource Include="Resources\drawable\linea2x.png" />
+    <AndroidResource Include="Resources\drawable\Login_Bk2a2x.png" />
+    <AndroidResource Include="Resources\drawable\Login_Bka2x.png" />
+    <AndroidResource Include="Resources\drawable\Login_Defaulta2x.png" />
+    <AndroidResource Include="Resources\drawable\Login_Find_Na2x.png" />
+    <AndroidResource Include="Resources\drawable\Login_Login_Ha2x.png" />
+    <AndroidResource Include="Resources\drawable\Login_Login_Na2x.png" />
+    <AndroidResource Include="Resources\drawable\Login_NameBka2x.png" />
+    <AndroidResource Include="Resources\drawable\Login_Reset_Ha2x.png" />
+    <AndroidResource Include="Resources\drawable\Login_Reset_Na2x.png" />
+    <AndroidResource Include="Resources\drawable\Login_Selecteda2x.png" />
+    <AndroidResource Include="Resources\drawable\logoa2x.png" />
+    <AndroidResource Include="Resources\drawable\messageInputNormala2x.png" />
+    <AndroidResource Include="Resources\drawable\messageInputSelecteda2x.png" />
+    <AndroidResource Include="Resources\drawable\moreBtna2x.png" />
+    <AndroidResource Include="Resources\drawable\msgBtnDisablea2x.png" />
+    <AndroidResource Include="Resources\drawable\msgBtnNormala2x.png" />
+    <AndroidResource Include="Resources\drawable\msgBtnPressa2x.png" />
+    <AndroidResource Include="Resources\drawable\nav_titlea2x.png" />
+    <AndroidResource Include="Resources\drawable\nav_title_ios7a2x.png" />
+    <AndroidResource Include="Resources\drawable\portBtnDisablea2x.png" />
+    <AndroidResource Include="Resources\drawable\portBtnNormala2x.png" />
+    <AndroidResource Include="Resources\drawable\portBtnPressa2x.png" />
+    <AndroidResource Include="Resources\drawable\portServiceBtnDisablea2x.png" />
+    <AndroidResource Include="Resources\drawable\portServiceBtnNormala2x.png" />
+    <AndroidResource Include="Resources\drawable\portServiceBtnPressa2x.png" />
+    <AndroidResource Include="Resources\drawable\projectFollowBtnDisablea2x.png" />
+    <AndroidResource Include="Resources\drawable\projectFollowBtnNormala2x.png" />
+    <AndroidResource Include="Resources\drawable\projectFollowBtnPressa2x.png" />
+    <AndroidResource Include="Resources\drawable\pwdTxNormala2x.png" />
+    <AndroidResource Include="Resources\drawable\pwdTxSelecteda2x.png" />
+    <AndroidResource Include="Resources\drawable\sendMsgNormala2x.png" />
+    <AndroidResource Include="Resources\drawable\sendMsgSelecteda2x.png" />
+    <AndroidResource Include="Resources\drawable\separateLinea2x.png" />
+    <AndroidResource Include="Resources\drawable\serviceBtnDisablea2x.png" />
+    <AndroidResource Include="Resources\drawable\serviceBtnNormala2x.png" />
+    <AndroidResource Include="Resources\drawable\serviceBtnPressa2x.png" />
+    <AndroidResource Include="Resources\drawable\userNameTxNormala2x.png" />
+    <AndroidResource Include="Resources\drawable\userNameTxSelecteda2x.png" />
+    <AndroidResource Include="Resources\layout\maintitlebar.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\detailstitlebar.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\allshipinfo.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\shipdetail.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\ship_detail_btnbaseinfo_res.xml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\drawable\ship_detail_btnmsg_res.xml" />
+    <AndroidResource Include="Resources\drawable\ship_detail_btnport_res.xml" />
+    <AndroidResource Include="Resources\drawable\ship_detail_btngoodsOwner_res.xml" />
+    <AndroidResource Include="Resources\drawable\ship_detail_btnservice_res.xml" />
+    <AndroidResource Include="Resources\drawable\ship_detail_btnprotservice_res.xml" />
+    <AndroidResource Include="Resources\drawable\ship_detail_btngas_res.xml" />
+    <AndroidResource Include="Resources\drawable\ship_detail_btncurrent_res.xml" />
+    <AndroidResource Include="Resources\drawable\ship_detail_btnexpense_res.xml" />
+    <AndroidResource Include="Resources\drawable\ship_detail_btnprojectFollow_res.xml" />
+    <AndroidResource Include="Resources\layout\allshiplistview.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\allshiplistview_round.xml" />
+    <AndroidResource Include="Resources\drawable\allshiplistview_parent.xml" />
+    <AndroidResource Include="Resources\layout\leaveMessage.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\leaveMessageListviewItem.axml" />
+    <AndroidResource Include="Resources\layout\baseInfolayout.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\docklistviewitem.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\docklistview.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\lineartextview_customcontrol.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\owerinfoactivity.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\servingcostlayout.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\twoLinearTextview_custom.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\ship_detail_btnback_res.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\AndroidManifest.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <AndroidResource Include="Resources\values\dimen.xml" />
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\drawable\allshiplistview_round_yellow.xml" />
+    <AndroidResource Include="Resources\drawable\dashedline.xml" />
+    <AndroidResource Include="Resources\drawable\background_view_rounded_top.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+     Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

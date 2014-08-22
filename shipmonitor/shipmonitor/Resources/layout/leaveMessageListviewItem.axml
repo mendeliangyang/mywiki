@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/detail_parent_background">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="4dp"
+        android:padding="4dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp">
+            <TextView
+                android:id="@+id/tv_lmls_username"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="text"
+                android:textColor="#ff6a5e5e" />
+            <TextView
+                android:id="@+id/tv_lmls_submittime"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="text"
+                android:gravity="right"
+                android:textColor="#ff6a5e5e" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#fffaf7f7">
+            <TextView
+                android:id="@+id/tv_lmls_leavemessage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="text"
+                android:textColor="#ff090202" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

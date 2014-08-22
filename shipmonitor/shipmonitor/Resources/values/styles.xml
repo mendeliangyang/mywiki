@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+<style name="style_detailship_imagebutton" >
+  	<item name="android:layout_width">fill_parent</item>
+  	<item name="android:layout_height">77dp</item>
+    <item name="android:gravity" >center</item>
+    <item name="android:layout_margin" >1dp</item>
+    <item name="android:layout_weight">1</item>
+    <item name="android:scaleType">fitXY</item>
+    <item name="android:background">#00000000</item>
+  </style>
+  <style name="style_allshiplistview_tv">
+  	<item name="android:textColor">#ff000000</item>
+  </style>
+  <style name="style_centertextview">
+  	<item name="android:gravity">center</item>
+  	<item name="android:layout_gravity">center</item>
+  </style>
+  <style name="style_detail_textview">
+  	<item name="android:layout_weight">1</item>
+  	<item name="android:layout_width">fill_parent</item>
+  	<item name="android:layout_height">wrap_content</item>
+  	<item name="android:gravity">right</item>
+  	<item name="android:layout_gravity">right</item>
+  	<item name="android:textColor">#ff0f0808</item>
+  	<item name="android:layout_margin">1dp</item>
+  </style>
+  <style name="style_detail_textview_lable">
+  	<item name="android:textColor">#ff0f0808</item>
+  	<item name="android:layout_margin">1dp</item>
+  	<item name="android:layout_height">wrap_content</item>
+  	<item name="android:layout_width">wrap_content</item>
+  </style>
+  <style name="style_detail_textview_lableTitle">
+  	<item name="android:textColor">#CACACA</item>
+  	<item name="android:layout_margin">1dp</item>
+  </style>
+  <style name="style_detail_table">
+  	<item name="android:background">#FBF6F6</item>
+  </style>
+  <style name="style_view_cut">
+  	<item name="android:layout_height">0.2dp</item>
+  	<item name="android:layout_margin">2dp</item>
+  	<item name="android:layout_marginTop">1dp</item>
+    <item name="android:layout_marginBottom">1dp</item>
+  	<item name="android:background">#ff7b7b7b</item>
+  </style>
+  <style name="login_username_top_rounded">
+    <item name="android:clickable">true</item>
+    <item name="android:focusable">true</item>
+    <item name="android:gravity">center_vertical</item>
+    <item name="android:background">@drawable/background_view_rounded_top</item>
+  </style>
+  </resources>

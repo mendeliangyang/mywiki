@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <ScrollView
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:id="@+id/scrollView1"
+        android:background="#E8E8E8">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:text="航次信息"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    sytle="@style/style_detail_textview_lableTitle" />
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/style_detail_table">
+                    <TableRow>
+                        <TextView
+                            android:text="航次创建时间"
+                            android:layout_column="0"
+                            android:gravity="left"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_settime"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="船名"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_name"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="航次编号"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_id"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="总耗时"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_totaltime"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="开始时间"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_starttime"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="结束时间"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_endtime"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="本航次开航港口"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_port"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="本航次开航码头"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_dock"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="装港"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_load"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="卸港"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_unload"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="总装货时间"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_loadtime"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="总卸货时间"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_unloadtime"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="最后离港时间"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_lasttime"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="该航次总耗时"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_voyagetime"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="总航行时间"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_totalvoyagetime"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="总作业时间"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_bustime"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="总等待时间"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_waittime"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="备注"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_column="0"
+                            android:layout_span="2"
+                            android:layout_gravity="left"
+                            android:gravity="left"
+                            style="@style/style_detail_textview"
+                            android:id="@+id/basedetail_tv_remark"
+                            android:height="40dp" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="港建费支付"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_buildpay"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="货物港务费"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_cargoportcost"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="重载航程"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_loadrange"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="空载航程"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_emptyrange"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="总航程"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_totalrange"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="赶船期"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_istime"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="注意事项"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_column="0"
+                            android:layout_span="2"
+                            android:layout_gravity="left"
+                            android:gravity="left"
+                            style="@style/style_detail_textview"
+                            android:id="@+id/basedetail_tv_attention"
+                            android:height="40dp" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout1">
+                    <TextView
+                        android:text="装货港联系人"
+                        android:layout_height="fill_parent"
+                        android:layout_width="wrap_content"
+                        sytle="@style/style_detail_textview_lableTitle" />
+                    <TextView
+                        android:id="@+id/basedetail_tv_loadname"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        sytle="@style/style_detail_textview_lableTitle" />
+                </LinearLayout>
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/style_detail_table">
+                    <TableRow>
+                        <TextView
+                            android:text="公司"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_loadcompany"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="电话"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_loadphone"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="固话"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_loadtelepone"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="传真"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_loadfax"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="邮箱"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_loademail"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout1">
+                    <TextView
+                        android:text="卸货港联系人"
+                        sytle="@style/style_detail_textview_lableTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent" />
+                    <TextView
+                        android:id="@+id/basedetail_tv_unloadname"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="right"
+                        android:gravity="right" />
+                </LinearLayout>
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/style_detail_table">
+                    <TableRow>
+                        <TextView
+                            android:text="公司"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_unloadcompany"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="电话"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_unloadphone"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="固话"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_unloadtelepone"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="传真"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_unloadfax"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="邮箱"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_unloademail"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout1">
+                    <TextView
+                        android:text="合同联系人"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        sytle="@style/style_detail_textview_lableTitle" />
+                    <TextView
+                        android:id="@+id/basedetail_tv_contractname"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        sytle="@style/style_detail_textview_lableTitle" />
+                </LinearLayout>
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/style_detail_table">
+                    <TableRow>
+                        <TextView
+                            android:text="公司"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_contractcompany"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="电话"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_contractphone"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="固话"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_contracttelepone"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="传真"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_contractfax"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="邮箱"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_contractemail"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout1">
+                    <TextView
+                        android:text="货主联系人"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        sytle="@style/style_detail_textview_lableTitle" />
+                    <TextView
+                        android:id="@+id/basedetail_tv_ownername"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        sytle="@style/style_detail_textview_lableTitle" />
+                </LinearLayout>
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/style_detail_table">
+                    <TableRow>
+                        <TextView
+                            android:text="公司"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_ownercompany"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="电话"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_ownerphone"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="固话"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_ownertelepone"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="传真"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_ownerfax"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="邮箱"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_owneremail"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout1">
+                    <TextView
+                        android:text="货代联系人"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        sytle="@style/style_detail_textview_lableTitle" />
+                    <TextView
+                        android:id="@+id/basedetail_tv_proxyname"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        sytle="@style/style_detail_textview_lableTitle" />
+                </LinearLayout>
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/style_detail_table">
+                    <TableRow>
+                        <TextView
+                            android:text="公司"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_proxycompany"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="电话"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_proxyphone"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="固话"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_proxytelepone"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="传真"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_proxyfax"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="邮箱"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                        <TextView
+                            android:layout_column="1"
+                            android:id="@+id/basedetail_tv_proxyemail"
+                            style="@style/style_detail_textview" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:text="各部门意见"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffa2a2a2"
+                    sytle="@style/style_detail_textview_lableTitle" />
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:shrinkColumns="0"
+                    style="@style/style_detail_table">
+                    <TableRow
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent">
+                        <TextView
+                            android:text="商务意见"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_column="0"
+                            android:id="@+id/basedetail_tv_business"
+                            style="@style/style_detail_textview"
+                            android:gravity="left"
+                            android:layout_gravity="left"
+                            android:height="40dp"
+                            android:layout_width="fill_parent"
+                            android:layout_weight="1"
+                            android:textSize="7dp" />
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/tableRow3">
+                        <TextView
+                            android:text="机务意见"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/tableRow30">
+                        <TextView
+                            android:layout_column="0"
+                            android:id="@+id/basedetail_tv_maintenance"
+                            style="@style/style_detail_textview"
+                            android:gravity="left"
+                            android:layout_gravity="left"
+                            android:height="40dp"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:textSize="7dp" />
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/tableRow4">
+                        <TextView
+                            android:text="调度意见"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/tableRow31">
+                        <TextView
+                            android:layout_column="0"
+                            android:id="@+id/basedetail_tv_dispatch"
+                            style="@style/style_detail_textview"
+                            android:gravity="left"
+                            android:layout_gravity="left"
+                            android:height="40dp"
+                            android:textSize="7dp" />
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/tableRow5">
+                        <TextView
+                            android:text="海务意见"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/tableRow32">
+                        <TextView
+                            android:layout_column="0"
+                            android:id="@+id/basedetail_tv_sea"
+                            style="@style/style_detail_textview"
+                            android:gravity="left"
+                            android:layout_gravity="left"
+                            android:height="40dp"
+                            android:textSize="7dp" />
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/tableRow6">
+                        <TextView
+                            android:text="人事意见"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/tableRow33">
+                        <TextView
+                            android:layout_column="0"
+                            android:id="@+id/basedetail_tv_personnel"
+                            style="@style/style_detail_textview"
+                            android:gravity="left"
+                            android:layout_gravity="left"
+                            android:height="40dp"
+                            android:textSize="7dp" />
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/tableRow6">
+                        <TextView
+                            android:text="调度经理意见"
+                            android:layout_column="0"
+                            style="@style/style_detail_textview_lable" />
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/tableRow34">
+                        <TextView
+                            android:layout_column="0"
+                            android:id="@+id/basedetail_tv_manager"
+                            android:layout_gravity="left"
+                            android:gravity="left"
+                            style="@style/style_detail_textview"
+                            android:height="40dp"
+                            android:textSize="7dp" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

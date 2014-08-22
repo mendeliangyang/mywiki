@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+   <color name="lineartextview_layoutbackground">#FBF6F6</color>
+   <color name="lineartextview_layoutTitlebackground">#E8E8E8</color>
+   <color name="detail_parent_background">#E2E2E2</color>
+   <color name="lineartextview_titlelabletextcolor">#CACACA</color>
+</resources>

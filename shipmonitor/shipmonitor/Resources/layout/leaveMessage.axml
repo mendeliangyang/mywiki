@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/linearLayout1"
+        android:background="#ffe3e1e1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2">
+            <EditText
+                android:inputType="textMultiLine"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/edite_leaveMessage_inputmessage"
+                android:layout_weight="2"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:maxLength="200"
+                android:textColor="#ff514dfa"
+                android:hint="留言区域：内容限长200字符，换行建推出文字编辑。" />
+            <Button
+                android:text="完成"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/leavemessage_btn_submit"
+                android:layout_gravity="center"
+                android:layout_weight="0.7"
+                android:background="#ff6acc6a"
+                android:layout_marginBottom="5dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <shipmonitor.custom.refreshlistview
+                android:id="@+id/leavemessage_lsmessage"
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="1dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

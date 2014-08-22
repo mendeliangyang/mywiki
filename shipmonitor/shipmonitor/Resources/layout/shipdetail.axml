@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffc7d4d7">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:id="@+id/linearLayout1">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout2">
+                <ImageButton
+                    android:id="@+id/btn_shipdetail_baseinfo"
+                    android:layout_weight="1"
+                    android:src="@drawable/ship_detail_btnbaseinfo_res"
+                    style="@style/style_detailship_imagebutton" />
+                <ImageButton
+                    android:id="@+id/btn_shipdetail_leavemessage"
+                    android:layout_weight="2"
+                    style="@style/style_detailship_imagebutton"
+                    android:src="@drawable/ship_detail_btnmsg_res" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout3">
+                <ImageButton
+                    android:src="@drawable/ship_detail_btnport_res"
+                    android:layout_weight="1"
+                    android:id="@+id/btn_shipdetail_port"
+                    style="@style/style_detailship_imagebutton" />
+                <ImageButton
+                    android:src="@drawable/ship_detail_btngoodsOwner_res"
+                    android:layout_weight="1"
+                    android:id="@+id/btn_shipdetail_owner"
+                    style="@style/style_detailship_imagebutton" />
+                <ImageButton
+                    android:src="@drawable/ship_detail_btnservice_res"
+                    android:layout_weight="1"
+                    android:id="@+id/btn_shipdetail_service"
+                    style="@style/style_detailship_imagebutton" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout4">
+                <ImageButton
+                    android:src="@drawable/ship_detail_btnprotservice_res"
+                    android:layout_weight="1"
+                    style="@style/style_detailship_imagebutton"
+                    android:id="@+id/btn_shipdetail_protservice" />
+                <ImageButton
+                    android:src="@drawable/ship_detail_btngas_res"
+                    style="@style/style_detailship_imagebutton"
+                    android:layout_weight="2"
+                    android:id="@+id/btn_shipdetail_gas" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout5">
+                <ImageButton
+                    android:src="@drawable/ship_detail_btncurrent_res"
+                    android:layout_weight="2"
+                    style="@style/style_detailship_imagebutton"
+                    android:id="@+id/btn_shipdetail_current" />
+                <ImageButton
+                    android:src="@drawable/ship_detail_btnexpense_res"
+                    android:layout_weight="1"
+                    style="@style/style_detailship_imagebutton"
+                    android:id="@+id/btn_shipdetail_expense" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout6">
+                <ImageButton
+                    android:src="@drawable/ship_detail_btnprojectFollow_res"
+                    android:layout_weight="1"
+                    style="@style/style_detailship_imagebutton"
+                    android:id="@+id/btn_shipdetail_projectFollow" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
